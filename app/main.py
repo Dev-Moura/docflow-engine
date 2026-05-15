@@ -8,4 +8,6 @@ app = FastAPI(
 @app.get("/")
 async def root():
 
-    return ("message": "Docflow Engine runnig")
+    return {
+        "message": "Docflow Engine runnig"
+        }
