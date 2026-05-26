@@ -28,6 +28,6 @@ class User(BaseModel):
     )
 
     documents = relationship(
-        "document",
+        "Document",
         back_populates="owner"
     )

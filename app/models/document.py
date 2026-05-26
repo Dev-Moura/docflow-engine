@@ -14,7 +14,7 @@ class Document(BaseModel):
     __tablename__ = "documents"
 
     title: Mapped[str] = mapped_column(
-        String[255],
+        String(255),
         nullable=False
     )
 
